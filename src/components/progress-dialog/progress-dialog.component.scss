@@ -1,0 +1,19 @@
+  
+  footer {
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
+  .accordion {
+    height: 25px;
+  }
+
+  .panel {
+      display: block;
+      background-color: white;
+      overflow: hidden;
+      color: black;
+      transition: max-height 0.3s ease-out;
+    }

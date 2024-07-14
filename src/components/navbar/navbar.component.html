@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-4 border-bottom border-2 border-light-subtle">
+    <div>
+        <a href="#" class="me-4">
+            <img src="assets/logo.webp" alt="logo" class="logo-img">
+        </a>
+       
+        <div class="d-inline" *ngFor="let list of iconList;">
+            <app-dropdowns [icon]="list.icon" [name]="list.name" class="me-3"></app-dropdowns>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-end ms-auto">
+        <img src="assets/us-48.png" alt="USA" class="me-3" width="30" height="30">
+        <i class="mdi mdi-bell-badge-outline fs-4 text-body-tertiary me-3"></i>
+        <img src="assets/user.avif" alt="" class="border border-2 border-light-subtle rounded-circle" width="40" height="40">
+    </div>
+</nav>

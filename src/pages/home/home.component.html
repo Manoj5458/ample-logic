@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+
+<div class="vh-70 d-flex justify-content-center align-items-center">
+    <div class="d-grid gap-2 col-2 mx-auto">
+        <button *ngIf="!showContent" class="btn btn-primary" type="button" (click)="startProgress()">
+            Start
+        </button>
+    </div>
+</div>
+
+<app-progress-dialog (isCompleted)="showContent"></app-progress-dialog>
+
+<!-- <app-footer></app-footer> -->
