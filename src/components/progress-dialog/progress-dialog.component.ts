@@ -83,7 +83,7 @@ export class ProgressDialogComponent {
           this.count += 10;
           if (this.count === 100) {
             this.showFooterDialog = false;
-            this.isCompleted.emit(true);
+            this.isCompleted.emit(false);
             clearInterval(this.currentInterval);
             this.toastr.success('Migration applied successfully', 'Success', {
               progressBar: true,

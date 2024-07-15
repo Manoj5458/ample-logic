@@ -23,6 +23,7 @@ export class HomeComponent {
   @ViewChild(ProgressDialogComponent) childComponent!: ProgressDialogComponent;
 
   startProgress() {
+    this.showContent = true;
     this.childComponent?.progressLoader();
   }
 }

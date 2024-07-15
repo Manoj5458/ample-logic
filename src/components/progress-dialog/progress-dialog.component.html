@@ -1,8 +1,8 @@
-<footer *ngIf="showFooterDialog" class="progress-dialog">
+<footer [ngClass]="showFooterDialog ? 'd-block' : 'd-none'" class="progress-dialog">
     <button class="accordion btn btn-primary d-flex ms-auto me-3 mb-1 align-items-center">
         <i class="mdi fs-5" [ngClass]="toogleIcon ? 'mdi-menu-down' : 'mdi-menu-up'"></i>
     </button>
-    <div class="panel show" @flyInOut>
+    <div class="panel" @flyInOut>
         <div class="row ms-0 me-0" style="height: 95px">
             <div class="col-md-1 bg-primary d-flex justify-content-center align-items-center">
                 <i class="mdi mdi-rocket w-75 text-white text-center" style="font-size: 60px"></i>
